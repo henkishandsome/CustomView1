@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.customview.View.TitleBar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:title_text_color="@color/colorfulBlack"
+        app:title_bg="@android:color/holo_blue_dark">
+    </com.example.customview.View.TitleBar>
+
+    <com.example.customview.View.InvalidTextView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@android:color/holo_blue_bright"
+        android:gravity="center"
+        android:text="继承textview" />
+
+    <com.example.customview.View.RectView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        app:rect_color="@color/colorfulBlack" />
+
+    <com.example.customview.View.CircleView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btn_ViewGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:text="自定义ViewGroup" />
+
+</LinearLayout>
